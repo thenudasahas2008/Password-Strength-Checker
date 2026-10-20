@@ -1,5 +1,10 @@
 # 🔐 Python Password Strength Checker
 [![Python Tests](https://github.com/thenudasahas2008/Password-Strength-Checker/actions/workflows/python-tests.yml/badge.svg?branch=main)](https://github.com/thenudasahas2008/Password-Strength-Checker/actions/workflows/python-tests.yml)
+## 🌐 Live Demo
+
+Try the Password Strength Checker here:
+
+**[Open Password Strength Checker](https://thenudasahas2008.github.io/Password-Strength-Checker/)**
 
 A beginner-friendly cybersecurity project that gives local, heuristic feedback about a password's length, character variety, and some common patterns.
 
