@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,14,20,24&height=220&section=header&text=PASSWORD%20STRENGTH%20CHECKER&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Zero-Trust%20Client-Side%20Password%20Entropy%20%26%20Heuristic%20Security%20Assessor&descAlignY=58&descAlign=50" width="100%" alt="Password Strength Checker Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,14,20,24&height=220&section=header&text=PASSWORD%20STRENGTH%20CHECKER&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Zero-Trust%20Client-Side%20Password%20Entropy%20%26%20Heuristic%20Security%20Assessor&descAlignY=58&descAlign=50" width="100%" alt="Password Strength Checker Header Banner" />
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-60E6C2?style=for-the-badge&logo=githubpages&logoColor=0B1020)](https://thenudasahas2008.github.io/Password-Strength-Checker/)
 [![Python Tests](https://img.shields.io/github/actions/workflow/status/thenudasahas2008/Password-Strength-Checker/python-tests.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI%20Tests)](https://github.com/thenudasahas2008/Password-Strength-Checker/actions/workflows/python-tests.yml)
@@ -9,10 +9,10 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 <p align="center">
-  <b>An educational cybersecurity tool providing zero-transmission, heuristic password auditing via a secure Python CLI terminal tool and a modern client-side Web UI.</b>
+  <b>A zero-transmission cybersecurity utility providing client-side heuristic password auditing via a secure Python CLI terminal tool and a modern, responsive Web UI.</b>
 </p>
 
-[Live Web Demo](https://thenudasahas2008.github.io/Password-Strength-Checker/) • [Key Features](#-key-features) • [Algorithm & Architecture](#-heuristic-evaluation-architecture) • [CLI Quick Start](#-quick-start-cli) • [Unit Testing](#-automated-testing) • [Security & Privacy](#-privacy--zero-transmission-pledge)
+[🌐 Live Demo](https://thenudasahas2008.github.io/Password-Strength-Checker/) • [✨ Key Features](#-key-features) • [🏗️ Architecture](#-heuristic-evaluation-architecture) • [🚀 Quick Start](#-quick-start-cli) • [🧪 Unit Testing](#-automated-testing) • [📁 Structure](#-repository-structure) • [🔒 Privacy Pledge](#-privacy--zero-transmission-pledge)
 
 ---
 
@@ -20,32 +20,35 @@
 
 ## 🌐 Live Web Demo
 
-Try the interactive client-side web application directly in your browser:  
-👉 **[Launch Password Strength Checker](https://thenudasahas2008.github.io/Password-Strength-Checker/)**
+Experience the interactive, zero-transmission web application live in your browser:  
+👉 **[Launch Live Password Strength Checker](https://thenudasahas2008.github.io/Password-Strength-Checker/)**
 
-*(All calculations run entirely in your local browser sandbox; no passwords are ever logged, stored, or transmitted over the internet).*
+> [!NOTE]
+> All password evaluation routines execute strictly within your local browser sandbox runtime memory. No input is ever logged, stored, or transmitted across the network.
 
 ---
 
 ## 📖 Overview
 
-**Password-Strength-Checker** is a privacy-first cybersecurity utility designed to assess credential resilience against brute-force and dictionary attacks. Built with both a standalone Python CLI tool and a responsive cyber-themed web frontend, it scores credentials from **0 to 100** and categorizes them into clear tier labels:
+**Password-Strength-Checker** is an educational, privacy-first cybersecurity utility designed to assess credential resilience against brute-force, spray, and dictionary attacks. Built with both a standalone Python CLI tool and a responsive, cyber-themed Web frontend, it scores credentials from **0 to 100** and categorizes them into clear security tiers:
 
-- 🔴 **Weak (0 - 40):** High vulnerability to automated dictionary and pattern spray attacks.
-- 🟡 **Moderate (41 - 70):** Basic complexity met, but lacks entropy or length depth.
-- 🟢 **Strong (71 - 100):** Superior character variety, high entropy, and robust resistance to brute-force triages.
+| Tier | Score Range | Resilience Posture | Primary Vulnerabilities |
+| :--- | :---: | :--- | :--- |
+| 🔴 **Weak** | `0 - 40` | Immediate breach risk | Trivial dictionary words, short length, predictable sequences (`12345`, `qwerty`). |
+| 🟡 **Moderate** | `41 - 70` | Standard resilience | Basic complexity met, but vulnerable to GPU-accelerated hash cracking due to limited length. |
+| 🟢 **Strong** | `71 - 100` | High security posture | High entropy, 16+ characters, balanced distribution of symbols, numerals, and mixed-case letters. |
 
 ---
 
 ## ✨ Key Features
 
-- 🛡️ **Zero-Transmission Architecture:** 100% local execution. Evaluates input directly in runtime memory with zero network packets sent or saved.
-- 🧮 **Multi-Factor Heuristic Engine:** Analyzes password length, uppercase/lowercase variety, numeric distribution, and special characters.
-- 🚫 **Dictionary Blacklist Defense:** Detects and flags common vulnerable passwords (`password`, `123456`, `qwerty`, `admin`, etc.).
-- 📉 **Repetition & Sequence Penalties:** Identifies predictable patterns such as repeated characters (`aaaaa`) and linear sequences (`abc123`).
-- 🕶️ **Masked Terminal Input:** Utilizes Python's native `getpass` module to hide keystrokes from shoulder-surfing in the terminal.
-- 🧪 **Comprehensive Unit Test Suite:** Automated testing with Python's built-in `unittest` verifying edge cases, boundary values, and regression tests.
-- 📦 **Zero External Dependencies:** Runs out of the box using only Python's standard library (`re`, `string`, `getpass`, `unittest`).
+- 🛡️ **Zero-Transmission Architecture:** Evaluates input strictly in local volatile memory. Zero packets, zero API calls, and zero telemetry dispatched.
+- 🧮 **Multi-Factor Heuristic Engine:** Analyzes length thresholds, character diversity, uppercase/lowercase variety, numerals, and symbols.
+- 🚫 **Dictionary Blacklist Defense:** Detects and flags top vulnerable passwords (`password`, `123456`, `admin`, `iloveyou`, `welcome`, etc.).
+- 📉 **Pattern & Repetition Penalties:** Penalizes predictable repeated characters (`aaaaa`) and sequential runs (`abc`, `123`).
+- 🕶️ **Masked Terminal Input:** Utilizes Python's native `getpass` module to obscure keystrokes from shoulder-surfing during CLI evaluations.
+- 🧪 **Automated CI/CD Test Suite:** Complete `unittest` coverage across Python 3.9, 3.10, 3.11, and 3.12 via GitHub Actions.
+- 📦 **Zero External Dependencies:** Built entirely with Python's standard library (`re`, `string`, `getpass`, `unittest`).
 
 ---
 
@@ -53,22 +56,22 @@ Try the interactive client-side web application directly in your browser:
 
 ```mermaid
 flowchart TD
-    subgraph Input ["Credential Ingestion"]
-        CLI["Terminal (getpass masked)"]
-        WEB["Browser Web UI (HTML5/JS)"]
+    subgraph Ingestion ["1. Credential Ingestion"]
+        CLI["Terminal Input (getpass masked)"]
+        WEB["Browser Web UI (HTML5 / JS Client)"]
     end
 
-    subgraph HeuristicEngine ["Local Assessment Engine"]
-        BL["Dictionary Blacklist Check (Common Passwords)"]
-        LEN["Length Analysis (Minimum 8 / Optimal 16+)"]
-        DIV["Character Diversity (a-z, A-Z, 0-9, Symbols)"]
-        PAT["Pattern Filter (Repeats & Sequences)"]
-        CALC["Score Aggregator (0 - 100)"]
+    subgraph HeuristicEngine ["2. Local Assessment Engine"]
+        BL["Dictionary Blacklist Filter\n(Common Passwords & Patterns)"]
+        LEN["Length Analysis\n(Minimum 8 / Optimal 16+)"]
+        DIV["Character Diversity Matrix\n(a-z, A-Z, 0-9, Symbols)"]
+        PAT["Pattern Penalty Filter\n(Repeated Chars & Linear Sequences)"]
+        CALC["Score Aggregator\n(Weighted Formula 0 - 100)"]
     end
 
-    subgraph Result ["Output & Diagnostics"]
-        Label["Tier Classification (Weak / Moderate / Strong)"]
-        Advice["Actionable Hardening Feedback"]
+    subgraph Diagnostics ["3. Security Diagnostics & Output"]
+        Tier["Classification Label\n(Weak / Moderate / Strong)"]
+        Tips["Actionable Remediation Feedback\n(Entropy Hardening Advice)"]
     end
 
     CLI --> BL
@@ -78,8 +81,8 @@ flowchart TD
     LEN --> DIV
     DIV --> PAT
     PAT --> CALC
-    CALC --> Label
-    CALC --> Advice
+    CALC --> Tier
+    CALC --> Tips
 ```
 
 ---
@@ -87,7 +90,7 @@ flowchart TD
 ## 🚀 Quick Start (CLI)
 
 ### 1. Prerequisites
-- **Python 3.9** or newer installed ([python.org](https://www.python.org/downloads/))
+- **Python 3.9+** installed ([Download Python](https://www.python.org/downloads/))
 - **Git**
 
 ### 2. Clone Repository
@@ -96,16 +99,16 @@ git clone https://github.com/thenudasahas2008/Password-Strength-Checker.git
 cd Password-Strength-Checker
 ```
 
-### 3. Run the CLI Checker
+### 3. Run the CLI Tool
 ```bash
 python password_checker.py
 ```
-*(On macOS / Linux systems, use `python3 password_checker.py`).*
+*(On macOS / Linux distributions, execute `python3 password_checker.py`).*
 
-### 4. Interactive Terminal Output Example
+### 4. Interactive Terminal Session Example
 ```text
 ============================================================
-           🔐 LOCAL PASSWORD STRENGTH CHECKER
+           🔒 LOCAL PASSWORD STRENGTH CHECKER
 ============================================================
 [INFO] Your credential is evaluated strictly in local memory.
 [INFO] Zero data is saved, logged, or transmitted.
@@ -115,7 +118,7 @@ Enter a password to assess: ••••••••••••••••
 ------------------------------------------------------------
 DIAGNOSTIC SUMMARY:
 ------------------------------------------------------------
-Overall Score : 90 / 100
+Overall Score : 92 / 100
 Classification: Strong [SECURE]
 Entropy Checks:
   ✔ Length (16 characters)
@@ -130,17 +133,20 @@ Entropy Checks:
 
 ## 🧪 Automated Testing
 
-The project includes unit tests covering edge cases, empty strings, invalid inputs, blacklisted credentials, and maximum entropy configurations.
+The project includes an automated test suite verifying edge cases, empty strings, blacklisted phrases, and boundary values.
 
-Run all tests with detailed verbosity:
+Run the test suite directly with detailed verbosity:
 ```bash
 python -m unittest -v test_password_checker.py
-# Or run discovery across all test suites:
+```
+
+Or run automatic discovery across all test modules:
+```bash
 python -m unittest discover -s . -p "test_*.py" -v
 ```
 
 ### CI / CD Pipeline
-Every push and pull request automatically triggers the GitHub Actions workflow [python-tests.yml](.github/workflows/python-tests.yml) across Python 3.9, 3.10, 3.11, and 3.12 matrices.
+Every push and pull request automatically triggers the GitHub Actions workflow [.github/workflows/python-tests.yml](.github/workflows/python-tests.yml) across Python 3.9 through 3.12.
 
 ---
 
@@ -150,13 +156,14 @@ Every push and pull request automatically triggers the GitHub Actions workflow [
 Password-Strength-Checker/
 ├── .github/
 │   └── workflows/
-│       └── python-tests.yml   # GitHub Actions automated test workflow
-├── .gitignore                 # Python bytecode & cache exclusions
-├── index.html                 # Cyber-themed client-side Web Application
-├── LICENSE                    # MIT Open Source License
-├── password_checker.py        # Core Python CLI heuristic assessor
-├── README.md                  # Project documentation & usage guide
-└── test_password_checker.py   # Unit test test suite (unittest)
+│       └── python-tests.yml    # Automated CI matrix test runner
+├── .gitattributes              # Language detection overrides (Python)
+├── .gitignore                  # Python bytecode & temporary exclusions
+├── index.html                  # Cyber-themed client-side Web Application
+├── LICENSE                     # MIT Open Source License
+├── password_checker.py         # Core Python CLI heuristic assessor
+├── README.md                   # Comprehensive project documentation
+└── test_password_checker.py    # Automated unittest suite
 ```
 
 ---
@@ -164,9 +171,9 @@ Password-Strength-Checker/
 ## 🔒 Privacy & Zero-Transmission Pledge
 
 > [!IMPORTANT]
-> - **Zero Transmission:** Neither the Python CLI tool nor the web page transmits input to any remote server or third-party API.
-> - **Safe Testing:** Always use simulated or fictional passwords when demonstrating this tool. Never enter real master passwords or production credentials into public demonstration software.
-> - **Educational Heuristic:** This tool provides educational heuristics. For enterprise security audits, combine with password managers, hardware tokens (FIDO2 / YubiKey), and multi-factor authentication (MFA).
+> - **Zero Transmission:** Neither the Python CLI script nor the web frontend transmits input to any remote server or external API.
+> - **Safe Testing Practice:** Always use simulated or test passwords when evaluating security tools. Never enter real master passwords or production credentials into public software.
+> - **Educational Heuristics:** This tool provides educational heuristic feedback. For enterprise-grade protection, pair complex passwords with multi-factor authentication (MFA) and dedicated password managers.
 
 ---
 
@@ -175,12 +182,12 @@ Password-Strength-Checker/
 <div align="center">
 
 **Thenuda Sahas Sooriyaarachchi**  
-*Cybersecurity Researcher • DFIR Analyst • Ethical Developer*
+*Cybersecurity Researcher • DFIR Analyst • Python Developer*
 
 [![Email](https://img.shields.io/badge/Email-sahas.thenu%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sahas.thenu@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-thenudasahas2008-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thenudasahas2008)
-[![Website](https://img.shields.io/badge/Website-thenudasahas.site-00C7B7?style=for-the-badge&logo=google-chrome&logoColor=white)](https://thenudasahas.site/)
-[![Discord](https://img.shields.io/badge/Discord-ZYROX__01XI-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com)
+[![Website](https://img.shields.io/badge/Website-thenudasahas.site-00C7B7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://thenudasahas.site/)
+[![Discord](https://img.shields.io/badge/Discord-zyrox__01xi-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/zyrox_01xi)
 
 <p align="center">
   <sub>⭐ If this security tool helped your understanding, feel free to star the repo! ⭐</sub>
