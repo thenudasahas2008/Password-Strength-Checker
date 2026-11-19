@@ -52,6 +52,19 @@ Experience the interactive, zero-transmission web application live in your brows
 
 ---
 
+## 🧮 Theoretical Entropy Model
+
+Password resilience can also be measured through theoretical information entropy:
+
+$$\mathcal{H} = L \cdot \log_2(R)$$
+
+where:
+- $\mathcal{H}$ represents total bits of entropy.
+- $L$ represents total password character length.
+- $R$ represents the character pool pool size (e.g., 26 for lowercase, 52 for mixed case, 94 for full ASCII).
+
+---
+
 ## 🏗️ Heuristic Evaluation Architecture
 
 ```mermaid
