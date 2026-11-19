@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#064e3b"/>
+      <stop offset="85%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Wave Layer 1 Gradient -->
+    <linearGradient id="wave1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Wave Layer 2 Gradient -->
+    <linearGradient id="wave2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#059669" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Shield Glow Filter -->
+    <filter id="shieldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="240" fill="url(#bgGrad)"/>
+
+  <!-- Fluid Cyber Wave 1 -->
+  <path d="M 0 160 C 200 130, 380 200, 560 170 C 740 140, 880 180, 1000 150 L 1000 240 L 0 240 Z" fill="url(#wave1Grad)"/>
+
+  <!-- Fluid Cyber Wave 2 -->
+  <path d="M 0 185 C 240 155, 420 220, 620 185 C 800 150, 900 195, 1000 175 L 1000 240 L 0 240 Z" fill="url(#wave2Grad)"/>
+
+  <!-- Security Shield & Key Icon Badge -->
+  <g transform="translate(500, 62)" text-anchor="middle" filter="url(#shieldGlow)">
+    <!-- Security Shield Outline -->
+    <path d="M 0 -28 L 22 -18 C 22 4, 14 18, 0 26 C -14 18, -22 4, -22 -18 Z" fill="#022c22" stroke="#34d399" stroke-width="2"/>
+    <!-- Lock Shackle & Body -->
+    <path d="M -6 -4 L -6 -9 C -6 -13, 6 -13, 6 -9 L 6 -4" fill="none" stroke="#6ee7b7" stroke-width="2"/>
+    <rect x="-8" y="-4" width="16" height="13" rx="2.5" fill="#10b981"/>
+    <circle cx="0" cy="2" r="2" fill="#022c22"/>
+  </g>
+
+  <!-- Main Title -->
+  <text x="500" y="125" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="2">
+    PASSWORD STRENGTH CHECKER
+  </text>
+
+  <!-- Subtitle -->
+  <text x="500" y="152" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="600" fill="#a7f3d0" letter-spacing="0.5">
+    Zero-Trust Client-Side Password Entropy &amp; Heuristic Security Assessor
+  </text>
+</svg>

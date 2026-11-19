@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,14,20,24&height=220&section=header&text=PASSWORD%20STRENGTH%20CHECKER&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Zero-Trust%20Client-Side%20Password%20Entropy%20%26%20Heuristic%20Security%20Assessor&descAlignY=58&descAlign=50" width="100%" alt="Password Strength Checker Header Banner" />
+<img src="assets/header.svg" width="100%" alt="Password Strength Checker Header Banner" />
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-60E6C2?style=for-the-badge&logo=githubpages&logoColor=0B1020)](https://thenudasahas2008.github.io/Password-Strength-Checker/)
 [![Python Tests](https://img.shields.io/github/actions/workflow/status/thenudasahas2008/Password-Strength-Checker/python-tests.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI%20Tests)](https://github.com/thenudasahas2008/Password-Strength-Checker/actions/workflows/python-tests.yml)
