@@ -135,6 +135,8 @@ The project includes unit tests covering edge cases, empty strings, invalid inpu
 Run all tests with detailed verbosity:
 ```bash
 python -m unittest -v test_password_checker.py
+# Or run discovery across all test suites:
+python -m unittest discover -s . -p "test_*.py" -v
 ```
 
 ### CI / CD Pipeline
