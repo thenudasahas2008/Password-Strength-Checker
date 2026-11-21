@@ -187,23 +187,3 @@ Password-Strength-Checker/
 > - **Zero Transmission:** Neither the Python CLI script nor the web frontend transmits input to any remote server or external API.
 > - **Safe Testing Practice:** Always use simulated or test passwords when evaluating security tools. Never enter real master passwords or production credentials into public software.
 > - **Educational Heuristics:** This tool provides educational heuristic feedback. For enterprise-grade protection, pair complex passwords with multi-factor authentication (MFA) and dedicated password managers.
-
----
-
-## 👨‍💻 Author & Maintainer
-
-<div align="center">
-
-**Thenuda Sahas Sooriyaarachchi**  
-*Cybersecurity Researcher • DFIR Analyst • Python Developer*
-
-[![Email](https://img.shields.io/badge/Email-sahas.thenu%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sahas.thenu@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-thenudasahas2008-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thenudasahas2008)
-[![Website](https://img.shields.io/badge/Website-thenudasahas.site-00C7B7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://thenudasahas.site/)
-[![Discord](https://img.shields.io/badge/Discord-zyrox__01xi-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/zyrox_01xi)
-
-<p align="center">
-  <sub>⭐ If this security tool helped your understanding, feel free to star the repo! ⭐</sub>
-</p>
-
-</div>
